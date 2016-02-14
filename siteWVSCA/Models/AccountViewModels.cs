@@ -132,7 +132,7 @@ namespace siteWVSCA.Models
         [Display(Name = "USCF Expiration Date")]
         public string USCFExpire { get; set; }
 
-        [StringLength(4, MinimumLength = 3)]
+        [StringLength(4,ErrorMessage = "This will be a number between 100-N", MinimumLength = 3)]
         [Display(Name = "USCF Rating")]
         public string USCFRating { get; set; }
 
@@ -167,15 +167,15 @@ namespace siteWVSCA.Models
         [Display(Name = "Contact Email")]
         public string ContactEmail { get; set; }
 
-        [StringLength(100, ErrorMessage = "", MinimumLength = 1)]
+        [StringLength(100)]
         [Display(Name = "Contact Street Address")]
         public string ContactStreetAddress { get; set; }
 
-        [StringLength(100, ErrorMessage = "", MinimumLength = 1)]
+        [StringLength(100)]
         [Display(Name = "Contact City")]
         public string ContactCity { get; set; }
 
-        [StringLength(100, ErrorMessage = "", MinimumLength = 1)]
+        [StringLength(100)]
         [Display(Name = "Contact State")]
         public string ContactState { get; set; }
 
