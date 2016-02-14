@@ -1,9 +1,16 @@
-﻿<html>
-<head>
-    <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
-    <title>2016 WV State Scholastic Chess Championships Registration</title>
+﻿@{
+    ViewBag.Title = "2016 WV State Scholastic Chess Championships Registration";
+    ViewBag.Message = "March 5, 2016 WV State University, Institute, WV";
+}
+<h2 style="text-align: center;">@ViewBag.Title.</h2>
+<h3 style="text-align: center;">@ViewBag.Message</h3>
+@*This is the registration page*@
 
-</head>
+@*<head>
+        <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+        @*<title>2016 WV State Scholastic Chess Championships Registration</title>
+
+    </head>
 <body>
     <div style="text-align: center;">
         <h1>2016 WV Scholastic Chess Championships</h1>
@@ -11,29 +18,29 @@
             March 5, 2016<br>
             WV State University, Institute, WV
         </b><span style="font-family: MS Shell Dlg;"></span>
-    </div>
+    </div>*@
     <form method="post" action="https://www.ipage.com/scripts/formemail.bml">
         <input name="my_email" value="craig@wvsca.com,greerlaw@aol.com, craigtimmons@gmail.com" type="hidden">
         <input name="thankyou_url" value="http://www.wvsca.com/registration/confirmation.html" type="hidden"><input name="subject" value="2016 WVSCA State Chess Championship Registration" type="hidden"><br>
-        Fields marked with an "<b>*</b>" are required
+        Fields marked with an <font color="RED"><b>*</b></font> are required
         <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
             <tbody>
                 <tr>
-                    <td style="width: 112px;">*Name: Last, First</td>
+                    <td style="width: 112px;"><font color="RED"><b>*</b></font>Name: Last, First</td>
                     <td style="width: 285px;"><input size="40" tabindex="1" name="PlayerName" vk_1a4c0="subscribed"></td>
-                    <td style="width: 170px;">*Section</td>
+                    <td style="width: 170px;"><font color="RED"><b>*</b></font>Section</td>
                     <td style="width: 297px;">
                         <select name="Section" tabindex="13"><option selected="selected"></option><option>Primary K-3</option><option>Elementary K-5</option><option>Middle School K-8</option><option>High School K-12</option></select>
                     </td>
                 </tr>
                 <tr>
-                    <td style="width: 112px;">*Street Address</td>
+                    <td style="width: 112px;"><font color="RED"><b>*</b></font>Street Address</td>
                     <td style="width: 285px;"><input tabindex="2" name="PlayerStreet" vk_1a4c0="subscribed"></td>
                     <td style="width: 170px;">
                         <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
                             <tbody>
                                 <tr>
-                                    <td style="width: 160px;">*School Name</td>
+                                    <td style="width: 160px;"><font color="RED"><b>*</b></font>School Name</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -41,7 +48,7 @@
                     <td style="width: 297px;"><input tabindex="14" name="SchoolName" vk_1a4c0="subscribed"></td>
                 </tr>
                 <tr>
-                    <td style="width: 112px;">*City, St, Zip</td>
+                    <td style="width: 112px;"><font color="RED"><b>*</b></font>City, St, Zip</td>
                     <td style="width: 285px;"><input tabindex="3" name="PlayerCity" vk_1a4c0="subscribed">&nbsp;<input tabindex="4" size="2" value="WV" name="PlayerState" vk_1a4c0="subscribed">&nbsp;<input tabindex="5" size="10" maxlength="10" name="PlayerZipcode" vk_1a4c0="subscribed"></td>
                     <td style="width: 170px;">School City</td>
                     <td style="width: 297px;">
@@ -55,7 +62,7 @@
                         <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
                             <tbody>
                                 <tr>
-                                    <td style="width: 160px;">*Grade</td>
+                                    <td style="width: 160px;"><font color="RED"><b>*</b></font>Grade</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -65,7 +72,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>*Date of Birth</td>
+                    <td><font color="RED"><b>*</b></font>Date of Birth</td>
                     <td style="width: 285px;"><input tabindex="7" name="DOB" vk_1a4c0="subscribed"></td>
                     <td style="width: 170px;">
                         <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
@@ -99,7 +106,7 @@
                     <td style="width: 297px;"><input tabindex="19" name="ContactStAddress" vk_1a4c0="subscribed"></td>
                 </tr>
                 <tr>
-                    <td style="width: 112px;">*USCF ID</td>
+                    <td style="width: 112px;"><font color="RED"><b>*</b></font>USCF ID</td>
                     <td style="width: 285px;"><input maxlength="8" tabindex="10" name="USCF_ID" vk_1a4c0="subscribed"></td>
                     <td style="width: 170px;">Contact City/St/Zip</td>
                     <td style="width: 297px;">
@@ -114,7 +121,7 @@
                 </tr>
                 <tr>
                     <td style="width: 112px;">
-                        *USCF Expiration Date
+                        <font color="RED"><b>*</b></font>USCF Expiration Date
                         (MMYY)
                     </td>
                     <td style="width: 285px;"><input tabindex="11" name="USCFExpiration" vk_1a4c0="subscribed"></td>
@@ -162,4 +169,3 @@
         <span style="font-weight: bold;"></span>
     </form>
 </body>
-</html>

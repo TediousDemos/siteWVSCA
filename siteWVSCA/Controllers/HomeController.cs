@@ -13,7 +13,7 @@ namespace siteWVSCA.Controllers
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult Registration()
         {
             ViewBag.Message = "Your application description page.";
 
