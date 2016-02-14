@@ -1,7 +1,165 @@
-﻿@{
-    ViewBag.Title = "About";
-}
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+﻿<html>
+<head>
+    <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+    <title>2016 WV State Scholastic Chess Championships Registration</title>
 
-<p>Use this area to provide additional information.</p>
+</head>
+<body>
+    <div style="text-align: center;">
+        <h1>2016 WV Scholastic Chess Championships</h1>
+        <b>
+            March 5, 2016<br>
+            WV State University, Institute, WV
+        </b><span style="font-family: MS Shell Dlg;"></span>
+    </div>
+    <form method="post" action="https://www.ipage.com/scripts/formemail.bml">
+        <input name="my_email" value="craig@wvsca.com,greerlaw@aol.com, craigtimmons@gmail.com" type="hidden">
+        <input name="thankyou_url" value="http://www.wvsca.com/registration/confirmation.html" type="hidden"><input name="subject" value="2016 WVSCA State Chess Championship Registration" type="hidden"><br>
+        Fields marked with an "<b>*</b>" are required
+        <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+            <tbody>
+                <tr>
+                    <td style="width: 112px;">*Name: Last, First</td>
+                    <td style="width: 285px;"><input size="40" tabindex="1" name="PlayerName" vk_1a4c0="subscribed"></td>
+                    <td style="width: 170px;">*Section</td>
+                    <td style="width: 297px;">
+                        <select name="Section" tabindex="13"><option selected="selected"></option><option>Primary K-3</option><option>Elementary K-5</option><option>Middle School K-8</option><option>High School K-12</option></select>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 112px;">*Street Address</td>
+                    <td style="width: 285px;"><input tabindex="2" name="PlayerStreet" vk_1a4c0="subscribed"></td>
+                    <td style="width: 170px;">
+                        <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+                            <tbody>
+                                <tr>
+                                    <td style="width: 160px;">*School Name</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td style="width: 297px;"><input tabindex="14" name="SchoolName" vk_1a4c0="subscribed"></td>
+                </tr>
+                <tr>
+                    <td style="width: 112px;">*City, St, Zip</td>
+                    <td style="width: 285px;"><input tabindex="3" name="PlayerCity" vk_1a4c0="subscribed">&nbsp;<input tabindex="4" size="2" value="WV" name="PlayerState" vk_1a4c0="subscribed">&nbsp;<input tabindex="5" size="10" maxlength="10" name="PlayerZipcode" vk_1a4c0="subscribed"></td>
+                    <td style="width: 170px;">School City</td>
+                    <td style="width: 297px;">
+                        <input tabindex="15" name="SchoolCity" vk_1a4c0="subscribed">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 112px;">Telephone xxx-xxx-xxxx</td>
+                    <td style="width: 285px;"><input tabindex="6" name="PlayerTelephone" vk_1a4c0="subscribed"></td>
+                    <td style="width: 170px;">
+                        <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+                            <tbody>
+                                <tr>
+                                    <td style="width: 160px;">*Grade</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td style="width: 297px;">
+                        <select name="Grade" tabindex="16"><option selected="selected"></option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option></select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>*Date of Birth</td>
+                    <td style="width: 285px;"><input tabindex="7" name="DOB" vk_1a4c0="subscribed"></td>
+                    <td style="width: 170px;">
+                        <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+                            <tbody>
+                                <tr>
+                                    <td style="width: 160px;">
+                                        Contact Name:
+                                        Last, First
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td style="width: 297px;"><input tabindex="17" name="ContactName" vk_1a4c0="subscribed"></td>
+                </tr>
+                <tr>
+                    <td style="width: 112px;">
+                        Gender<br>
+                    </td>
+                    <td style="width: 285px;">
+                        <select name="Gender" tabindex="8"><option selected="selected"></option><option>Male</option><option>Female</option></select>
+                        <br>
+                    </td>
+                    <td style="width: 170px;">Contact Email</td>
+                    <td style="width: 297px;"><input tabindex="18" name="ContactEmail" vk_1a4c0="subscribed"></td>
+                </tr>
+                <tr>
+                    <td>Email Address</td>
+                    <td style="width: 285px;"><input tabindex="9" name="PlayerEmail" vk_1a4c0="subscribed"></td>
+                    <td style="width: 170px;">Contact Address</td>
+                    <td style="width: 297px;"><input tabindex="19" name="ContactStAddress" vk_1a4c0="subscribed"></td>
+                </tr>
+                <tr>
+                    <td style="width: 112px;">*USCF ID</td>
+                    <td style="width: 285px;"><input maxlength="8" tabindex="10" name="USCF_ID" vk_1a4c0="subscribed"></td>
+                    <td style="width: 170px;">Contact City/St/Zip</td>
+                    <td style="width: 297px;">
+                        <table style="text-align: left; width: 305px; height: 33px;" border="0" cellpadding="2" cellspacing="2">
+                            <tbody>
+                                <tr>
+                                    <td style="width: 294px;"><input tabindex="20" name="ContactCity" vk_1a4c0="subscribed"><input tabindex="21" size="2" value="WV" name="ContactState" vk_1a4c0="subscribed">&nbsp;<input tabindex="22" size="10" maxlength="10" name="ContactZipcode" vk_1a4c0="subscribed"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 112px;">
+                        *USCF Expiration Date
+                        (MMYY)
+                    </td>
+                    <td style="width: 285px;"><input tabindex="11" name="USCFExpiration" vk_1a4c0="subscribed"></td>
+                    <td style="width: 170px;">
+                        Contact Phone Number
+                        xxx-xxx-xxxxx
+                    </td>
+                    <td style="width: 297px;"><input tabindex="23" name="ContactTelephone" vk_1a4c0="subscribed"></td>
+                </tr>
+                <tr>
+                    <td style="width: 112px;">USCF Rating</td>
+                    <td style="width: 285px;">
+                        <input tabindex="12" name="Rating" vk_1a4c0="subscribed">
+                    </td>
+                    <td style="width: 170px;"></td>
+                    <td style="width: 297px;"></td>
+                </tr>
+            </tbody>
+        </table>
+        <p>
+            <br>
+            <input name="required" value="PlayerName, PlayerStreet, PlayerCity, PlayerState, PlayerZipcode, Gender, DOB, USCF_ID, USCFExpiration, Grade, Section, SchoolName" type="hidden"> <input name="order" value="PlayerName, PlayerStreet, PlayerCity, PlayerState, PlayerZipcode, PlayerTelephone, PlayerEmail, Gender, DOB, USCF_ID, USCFExpiration,Rating, Grade, Section, SchoolCity, SchoolName, ContactName, ContactEmail, ContactStAddress,ContactCity, ContactState, ContactZipcode, ContactTelephone" type="hidden"> Entry fees:Received by March 2,
+            $25.&nbsp;
+            <br>
+        </p>
+        <p>
+            Make Check Payable to: <span style="font-weight: bold;">WVSCA</span><br>
+            Mail to :<br>
+            <span style="font-weight: bold;">Craig Timmons</span><br style="font-weight: bold;">
+            <span style="font-weight: bold;">811 Hughes Dr.</span><br style="font-weight: bold;">
+            <span style="font-weight: bold;">
+                Saint Albans, WV
+                &nbsp;25177
+            </span>
+        </p>
+        <p>
+            Note player's name and USCF ID on check. Make check payable
+            to WVSCA.&nbsp; We do not accept cash.<br>
+            <br>
+            <input tabindex="25" value="Submit" type="submit">
+            <input name="reset" value="Reset" type="reset" vk_1a4c0="subscribed"><br>
+            <br>
+            <br>
+        </p>
+        <span style="font-weight: bold;"></span>
+    </form>
+</body>
+</html>
