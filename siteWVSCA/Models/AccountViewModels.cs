@@ -1,6 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
+
+//This is used to define the variables used in the views, and create their get/set methods
 namespace siteWVSCA.Models
 {
     public class ExternalLoginConfirmationViewModel
@@ -61,7 +63,7 @@ namespace siteWVSCA.Models
         [Display(Name = "Remember me?")]
         public bool RememberMe { get; set; }
     }
-
+    //THis is used for the registration (Deafult found on the right, next to login)
     public class RegisterViewModel
     {
         [Required]
@@ -128,11 +130,11 @@ namespace siteWVSCA.Models
         public string USCFID { get; set; }
 
         [Required]
-        [StringLength(4,ErrorMessage ="Give in format of MMYY",MinimumLength = 4)]
+        [StringLength(4,ErrorMessage ="{0} should be given in format of MMYY",MinimumLength = 4)]
         [Display(Name = "USCF Expiration Date")]
         public string USCFExpire { get; set; }
 
-        [StringLength(4,ErrorMessage = "This will be a number between 100-N", MinimumLength = 3)]
+        [StringLength(4,ErrorMessage = "{0] will be a number between 100-N", MinimumLength = 3)]
         [Display(Name = "USCF Rating")]
         public string USCFRating { get; set; }
 
@@ -175,7 +177,7 @@ namespace siteWVSCA.Models
         [Display(Name = "Contact City")]
         public string ContactCity { get; set; }
 
-        [StringLength(100)]
+        [StringLength(2)]
         [Display(Name = "Contact State")]
         public string ContactState { get; set; }
 

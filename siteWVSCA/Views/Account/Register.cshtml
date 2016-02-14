@@ -50,13 +50,14 @@
                  @Html.TextBoxFor(m => m.Telephone, new { @class = "form-control" })
              </div>
          </div>
-    <div class="form-group">
+    @*NOTE: datatime still don't work, and dropdownlists are little better
+        <div class="form-group">
             @Html.LabelFor(m => m.BirthDate, new { @class = "col-md-2 control-label" })
             <div class="col-md-10">
                 @Html.TextBoxFor(m => m.BirthDate, new { @class = "form-control" })
             </div>
         </div>
-   @* <div class="form-group">
+    <div class="form-group">
             @Html.LabelFor(m => m.Gender, new { @class = "col-md-2 control-label" })
         <div class="col-md-10">
             @Html.DropDownList("Gender", (SelectList)ViewBag.Gender)
@@ -90,20 +91,22 @@
             @Html.TextBoxFor(m => m.USCFID, new { @class = "form-control" })
         </div>
     </div>
-    <div class="form-group">
-        @Html.LabelFor(m => m.USCFRating, new { @class = "col-md-2 control-label" })
-        <div class="col-md-10">
-            @Html.TextBoxFor(m => m.USCFRating, new { @class = "form-control" })
-        </div>
-    </div>
-    <div class="form-group">
-        @Html.LabelFor(m => m.USCFExpire, new { @class = "col-md-2 control-label" })
-        <div class="col-md-10">
-            @Html.TextBoxFor(m => m.USCFExpire, new { @class = "form-control" })
-        </div>
-    </div>
 
-    @*SCHOOL INFO*@
+    @*NOTE: USCF Rating and expiring date don't work rigth, something to do with DateTime, but that doesn't explain the Rating
+        <div class="form-group">
+            @Html.LabelFor(m => m.USCFRating, new { @class = "col-md-2 control-label" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(m => m.USCFRating, new { @class = "form-control" })
+            </div>
+        </div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.USCFExpire, new { @class = "col-md-2 control-label" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(m => m.USCFExpire, new { @class = "form-control" })
+                </div>
+            </div>
+
+            @*SCHOOL INFO*@
     <div class="form-group">
         @Html.LabelFor(m => m.SchoolName, new { @class = "col-md-2 control-label" })
         <div class="col-md-10">

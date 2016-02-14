@@ -9,6 +9,7 @@ namespace siteWVSCA.Controllers
     public class GenderController : Controller
     {
         // GET: Gender
+        //NOTE: I don't know if this is needed, but it might be used for dropdownlists. This one is for gender.
         public ActionResult Index()
         {
             List<SelectListItem> items = new List<SelectListItem>();
