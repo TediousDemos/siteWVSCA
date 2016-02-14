@@ -81,32 +81,32 @@ namespace siteWVSCA.Models
         public string ConfirmPassword { get; set; }
 
         [Required]
-        [StringLength(70,ErrorMessage = null, MinimumLength = 1)]
+        [StringLength(70,ErrorMessage = "{0} is a required field", MinimumLength = 1)]
         [Display(Name = "First name")]
         public string NameFirst { get; set; }
 
         [Required]
-        [StringLength(70, ErrorMessage = "", MinimumLength = 1)]
+        [StringLength(70, ErrorMessage = "{0} is a required field", MinimumLength = 1)]
         [Display(Name = "Last Name")]
         public string NameLast { get; set; }
 
         [Required]
-        [StringLength(100, ErrorMessage = "", MinimumLength = 1)]
+        [StringLength(100, ErrorMessage = "{0} is a required field", MinimumLength = 1)]
         [Display(Name = "Street Address")]
         public string StreetAddress { get; set; }
 
         [Required]
-        [StringLength(100, ErrorMessage = "", MinimumLength = 1)]
+        [StringLength(100, ErrorMessage = "{0} is a required field", MinimumLength = 1)]
         [Display(Name = "City")]
         public string City { get; set; }
 
         [Required]
-        [StringLength(100, ErrorMessage = "", MinimumLength = 1)]
+        [StringLength(100, ErrorMessage = "{0} is a required field", MinimumLength = 1)]
         [Display(Name = "State")]
         public string State { get; set; }
 
         [Required]
-        [StringLength(10, ErrorMessage = "", MinimumLength = 5)]
+        [StringLength(10, ErrorMessage = "{0} is a required field", MinimumLength = 5)]
         [Display(Name = "ZIP code")]
         public string Zip { get; set; }
 
@@ -142,7 +142,7 @@ namespace siteWVSCA.Models
         public string Section { get; set; }
 
         [Required]
-        [StringLength(100,MinimumLength =1)]
+        [StringLength(100, ErrorMessage = "{0} is a required field",MinimumLength =1)]
         [Display(Name = "School Name")]
         public string SchoolName { get; set; }
 
@@ -151,7 +151,7 @@ namespace siteWVSCA.Models
         public string SchoolCity { get; set; }
 
         [Required]
-        [StringLength(2)]
+        [StringLength(2, ErrorMessage = "{0} is a required field")]
         [Display(Name = "Grade")]
         public string Grade { get; set; }
 
