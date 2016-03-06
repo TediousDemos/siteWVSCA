@@ -24,19 +24,8 @@ namespace siteWVSCA.Controllers
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "This is how you can conact us.";
+            ViewBag.Message = "Tournament Directors:";
 
-            return View();
-        }
-        public ActionResult Gender()
-        {
-            List<SelectListItem> items = new List<SelectListItem>();
-
-            items.Add(new SelectListItem { Text = "Select Gender", Value = "0" });
-            items.Add(new SelectListItem { Text = "Female", Value = "1" });
-            items.Add(new SelectListItem { Text = "Male", Value = "2", Selected = true });
-            items.Add(new SelectListItem { Text = "Other", Value = "3" });
-            ViewBag.Gender = items;
             return View();
         }
     }
