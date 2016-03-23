@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
+
+//This is where views are returned, there shoudl be acouple others that deal with linking within the site
 namespace siteWVSCA.Controllers
 {
     public class HomeController : Controller
@@ -13,16 +15,16 @@ namespace siteWVSCA.Controllers
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult Registration()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Register for an account to simplify torunament registration";
 
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Tournament Directors:";
 
             return View();
         }
