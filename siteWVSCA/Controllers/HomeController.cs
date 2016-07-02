@@ -28,5 +28,11 @@ namespace siteWVSCA.Controllers
 
             return View();
         }
+        public ActionResult JSONTest()
+        {
+            ViewBag.Message = "JSON testing stuff:";
+
+            return View();
+        }
     }
 }
